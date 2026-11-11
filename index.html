@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFRS 18 無痛轉換｜鼎新 ERP × Agent Space</title>
+  <meta name="description" content="IFRS 18 損益表全面改版。鼎新 ERP 結合 Agent Space，從科目盤點、自動分類到比較期重編，讓經營者、財會與資訊人員都能無痛轉換。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=7">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <!-- 導覽列 -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#" class="brand">
+        <span class="brand-name">鼎新數智</span>
+        <span class="brand-sep"></span>
+        <span class="brand-sub">IFRS 18</span>
+      </a>
+      <nav class="nav">
+        <a href="#overview">新制重點</a>
+        <a href="#scenarios">情境痛點</a>
+        <a href="#approach">因應做法</a>
+        <a href="#solution">解決方案</a>
+        <a href="#simulator">試算體驗</a>
+        <a href="#insights">文章專區</a>
+        <a href="#faq">常見問題</a>
+      </nav>
+      <a href="#FormTemplate" class="btn btn-sky btn-sm">預約諮詢 <span class="arrow">→</span></a>
+    </div>
+  </header>
+
+  <!-- Hero：倒數計時 -->
+  <section class="hero">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="hero-kicker"><span class="kicker-line" aria-hidden="true"></span>IFRS 18｜財務報表之表達與揭露</p>
+        <h1>
+          <span class="h1-line">損益表的</span>
+          <span class="h1-line">國際新語言。</span>
+          <span class="h1-line h1-accent">轉換，現在開始。</span>
+        </h1>
+        <p class="hero-lead">
+          IFRS 18 正在改變企業表達績效的方式。<br>
+          <strong>鼎新 ERP × Agent Space</strong>，陪經營者、財會與資訊團隊，一起做好轉換準備。
+        </p>
+        <p class="hero-scope"><b>適用對象</b>公開發行公司・2028 會計年度起適用</p>
+        <div class="hero-actions">
+          <a href="#FormTemplate" class="btn btn-sky">立即預約轉換評估 <span class="arrow">→</span></a>
+          <a href="#scenarios" class="btn-text"><span>了解你的轉換情境</span><i>↓</i></a>
+        </div>
+      </div>
+
+      <div class="countdown" aria-live="polite">
+        <span class="cd-ghost" aria-hidden="true">18</span>
+        <p id="cd-label" class="cd-head">距離 2027 比較期間開始</p>
+        <div class="cd-days-row">
+          <div class="flip cd-days" data-unit="d">--</div>
+          <div class="cd-days-side"><span class="cd-days-unit">DAYS</span></div>
+        </div>
+        <div class="cd-units">
+          <div class="cd-unit"><div class="flip" data-unit="h">--</div><span>HRS</span></div>
+          <div class="cd-unit"><div class="flip" data-unit="m">--</div><span>MIN</span></div>
+          <div class="cd-unit"><div class="flip" data-unit="s">--</div><span>SEC</span></div>
+        </div>
+        <!-- 準備時程：目前階段由 js/landing.js 依今天年份標示 -->
+        <ol class="cd-track">
+          <li data-year="2026"><span class="cd-date">2026</span><span>盤點科目與報表公式</span></li>
+          <li data-year="2027"><span class="cd-date">2027</span><span>產出可比較報表</span></li>
+          <li data-year="2028"><span class="cd-date">2028</span><span>正式適用新制</span></li>
+        </ol>
+        <p class="cd-note">IFRS 18 須追溯重編比較期間，2027 年的帳務資料就必須能依新制表達。實際適用時程以金管會公告為準。</p>
+      </div>
+    </div>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>OPERATING PROFIT・營業損益</span><span>PROFIT BEFORE FINANCING AND INCOME TAXES・籌資及所得稅前損益</span><span>MPM・管理階層績效衡量</span><span>INVESTING CATEGORY・投資類別</span><span>FINANCING CATEGORY・籌資類別</span><span>AGGREGATION & DISAGGREGATION・彙總與細分</span><span>IAS 7 AMENDMENTS・現金流量表修正</span>
+        <span>OPERATING PROFIT・營業損益</span><span>PROFIT BEFORE FINANCING AND INCOME TAXES・籌資及所得稅前損益</span><span>MPM・管理階層績效衡量</span><span>INVESTING CATEGORY・投資類別</span><span>FINANCING CATEGORY・籌資類別</span><span>AGGREGATION & DISAGGREGATION・彙總與細分</span><span>IAS 7 AMENDMENTS・現金流量表修正</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 新制重點 -->
+  <section id="overview" class="section">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="sec-kicker"><span class="sec-idx">01</span>IFRS 18 三分鐘看懂</p>
+        <h2>淨利不變，<br>但損益表的「說法」全變了</h2>
+        <p class="sec-lead">IFRS 18 是表達與揭露準則，不改變認列與衡量。但每一個損益項目都要重新歸類，營業損益的金額與口徑也會隨之改變。</p>
+      </div>
+
+      <div class="numbers reveal">
+        <div class="number"><strong>3</strong><span>大類別</span><p>營業、投資、籌資<br>另有所得稅、停業單位</p></div>
+        <div class="number"><strong>2</strong><span>個新強制小計</span><p>營業損益<br>籌資及所得稅前損益</p></div>
+        <div class="number"><strong>1</strong><span>份 MPM 附註</span><p>自訂績效指標<br>須定義並調節</p></div>
+      </div>
+
+      <p class="swipe-hint" aria-hidden="true">左右滑動比較新舊格式 →</p>
+      <div class="compare reveal">
+        <div class="stmt stmt-old">
+          <p class="stmt-title">IAS 1｜現行格式</p>
+          <ul>
+            <li>營業收入</li>
+            <li>營業成本・營業費用</li>
+            <li class="stmt-sub">營業利益</li>
+            <li class="stmt-mixed">營業外收入及支出<small>利息、股利、權益法損益、匯兌、財務成本混合列示</small></li>
+            <li class="stmt-sub">稅前淨利</li>
+            <li>所得稅費用</li>
+            <li class="stmt-sub stmt-net">本期淨利</li>
+          </ul>
+        </div>
+        <div class="compare-arrow" aria-hidden="true"><span>RECLASSIFY</span><i>→</i><span>重新分類</span></div>
+        <div class="stmt stmt-new">
+          <p class="stmt-title">IFRS 18｜新制格式</p>
+          <ul>
+            <li class="band band-op">營業類別<small>收入、成本、費用、營業相關匯兌</small></li>
+            <li class="stmt-sub">營業損益 <em>NEW SUBTOTAL</em></li>
+            <li class="band band-inv">投資類別<small>利息收入、股利、權益法損益</small></li>
+            <li class="stmt-sub">籌資及所得稅前損益 <em>NEW SUBTOTAL</em></li>
+            <li class="band band-fin">籌資類別<small>借款利息、租賃負債利息</small></li>
+            <li class="band band-tax">所得稅類別</li>
+            <li class="stmt-sub stmt-net">本期淨利</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 情境痛點 -->
+  <section id="scenarios" class="section section-navy">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="sec-kicker"><span class="sec-idx">02</span>情境痛點</p>
+        <h2>同一個準則，<br>每個角色卡關的地方都不同</h2>
+        <p class="sec-lead">選擇你的角色，先看情境會怎麼發生，再看鼎新 ERP 如何接住。</p>
+      </div>
+
+      <div class="roles reveal" role="tablist" aria-label="選擇角色">
+        <button class="role" role="tab" data-role="executive" aria-selected="true">
+          <span class="role-no">01</span>
+          <span class="role-name">我是經營者</span>
+          <span class="role-desc">董事長・總經理・財務長</span>
+        </button>
+        <button class="role" role="tab" data-role="finance" aria-selected="false">
+          <span class="role-no">02</span>
+          <span class="role-name">我是財會人員</span>
+          <span class="role-desc">會計主管・會計・稽核</span>
+        </button>
+        <button class="role" role="tab" data-role="it" aria-selected="false">
+          <span class="role-no">03</span>
+          <span class="role-name">我是資訊人員</span>
+          <span class="role-desc">資訊主管・系統管理・報表開發</span>
+        </button>
+      </div>
+
+      <div id="role-panel" class="role-panel reveal" role="tabpanel"></div>
+    </div>
+  </section>
+
+  <!-- 03 因應做法 -->
+  <section id="approach" class="section">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="sec-kicker"><span class="sec-idx">03</span>因應做法</p>
+        <h2>兩種做法，<br>取捨在前期投入與稽核軌跡</h2>
+        <p class="sec-lead">IFRS 18 將損益表分為營業、投資、籌資、所得稅與停業單位五類，並新增必列小計，既有科目與報表都要重新對應。企業可以選擇期末再做帳外調整，或提前在系統內建置。</p>
+      </div>
+
+      <div class="options reveal">
+        <div class="opt-row opt-head">
+          <span></span>
+          <span>期末帳外調整</span>
+          <span class="opt-pick">提前建置</span>
+        </div>
+        <div class="opt-row">
+          <span class="opt-label">做法</span>
+          <p>期末以帳外方式調整報表，分類偏重人工判斷</p>
+          <p class="opt-pick">2026 年完成新科目、報表公式與拋帳測試，新制直接在系統內產出</p>
+        </div>
+        <div class="opt-row">
+          <span class="opt-label">前期投入</span>
+          <p>較低</p>
+          <p class="opt-pick">較高</p>
+        </div>
+        <div class="opt-row">
+          <span class="opt-label">稽核軌跡</span>
+          <p>依賴人工判斷與帳外文件說明</p>
+          <p class="opt-pick">科目對應關係建在系統中，會計師查核時有依據可說明</p>
+        </div>
+        <div class="opt-row">
+          <span class="opt-label">較適合</span>
+          <p>交易量較少、組織架構單純的企業</p>
+          <p class="opt-pick">交易量大、子公司多、內控要求高的企業</p>
+        </div>
+      </div>
+
+      <div class="phases reveal">
+        <p class="phases-title">準備時程</p>
+        <ol>
+          <li data-year="2026">
+            <span class="phase-year">2026</span>
+            <strong>盤點與決策</strong>
+            <p>盤點既有科目與報表公式，逐項對應新分類；成立財會、IT、內稽與顧問的跨部門小組，決定採用哪種做法。</p>
+          </li>
+          <li data-year="2027">
+            <span class="phase-year">2027</span>
+            <strong>產出可比較報表</strong>
+            <p>依新制產出比較期間報表，並與簽證會計師確認分類邏輯。</p>
+          </li>
+          <li data-year="2028">
+            <span class="phase-year">2028</span>
+            <strong>正式適用新制</strong>
+            <p>公開發行公司 2028 會計年度起適用 IFRS 18，新舊科目依規劃停用。</p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="inline-cta reveal">
+        <div>
+          <strong>不確定哪種做法適合你？</strong>
+          <p>鼎新顧問可依你的科目架構與交易複雜度，提供專業協助與評估。</p>
+        </div>
+        <a href="#FormTemplate" class="btn btn-sky">預約顧問，評估你的因應做法 <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 解決方案 -->
+  <section id="solution" class="section section-dark">
+    <div class="hero-grid-bg dim" aria-hidden="true"></div>
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="sec-kicker"><span class="sec-idx">04</span>解決方案</p>
+        <h2>鼎新 ERP × Agent Space<br>系統守住規則，Agent 協助判斷</h2>
+        <p class="sec-lead">鼎新 ERP 提供 IFRS 18 的科目屬性與報表結構；Agent Space 中的 AI Agent 協助分類建議、差異檢核與揭露草稿。最終決策始終由人員確認。</p>
+      </div>
+
+      <ol class="pipeline reveal">
+        <li><div class="pipe-body"><span class="pipe-step">STEP 1</span><strong>交易資料</strong><small>既有帳務與科目</small></div></li>
+        <li><div class="pipe-body"><span class="pipe-step">STEP 2</span><strong>Agent 分類建議</strong><small>附判斷理由</small></div></li>
+        <li><div class="pipe-body"><span class="pipe-step">STEP 3</span><strong>財會人員確認</strong><small>保留覆核軌跡</small></div></li>
+        <li><div class="pipe-body"><span class="pipe-step">STEP 4</span><strong>ERP 科目屬性</strong><small>規則寫入系統</small></div></li>
+        <li class="pipe-end"><div class="pipe-body"><span class="pipe-step">OUTPUT</span><strong>IFRS 18 報表</strong><small>新舊格式並行</small></div></li>
+      </ol>
+
+      <!-- TODO: Agent 與 ERP 功能描述為草稿，請與產品團隊確認後修改 -->
+      <div class="solution-grid">
+        <div class="sol-col reveal">
+          <p class="sol-title"><span class="sol-badge">AGENT SPACE</span>四位 AI 助理</p>
+          <div class="agents">
+            <article class="agent"><h3>科目分類助理</h3><p>讀取會計科目與交易明細，依 IFRS 18 規則建議類別並說明理由。</p></article>
+            <article class="agent"><h3>重編檢核助理</h3><p>比對新舊格式損益表，標示營業損益差異來源，協助比較期重編。</p></article>
+            <article class="agent"><h3>MPM 揭露助理</h3><p>整理對外績效指標，產出 MPM 調節表與附註揭露草稿。</p></article>
+            <article class="agent"><h3>準則問答助理</h3><p>即時回答分類疑問，例如「租賃負債利息屬於哪一類？」</p></article>
+          </div>
+        </div>
+        <div class="sol-col reveal">
+          <p class="sol-title"><span class="sol-badge sol-badge-erp">鼎新 ERP</span>系統底座</p>
+          <ul class="erp-list">
+            <li><strong>科目屬性</strong><span>損益科目內建 IFRS 18 類別欄位</span></li>
+            <li><strong>新制報表</strong><span>營業損益、籌資及所得稅前損益自動小計</span></li>
+            <li><strong>雙軌並行</strong><span>過渡期新舊格式報表同時產出</span></li>
+            <li><strong>附註資料</strong><span>性質別費用、MPM 調節明細直接取用</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 試算體驗 -->
+  <!-- 精簡預告：數字由 js/landing.js 依 js/data.js 範例資料產生 -->
+  <section id="simulator" class="section">
+    <div class="container teaser reveal">
+      <div class="teaser-copy">
+        <p class="sec-kicker"><span class="sec-idx">05</span>試算體驗</p>
+        <h2>看看你的損益表<br>在 IFRS 18 下會怎麼變</h2>
+        <p class="sec-lead">以範例公司試算：原本列在營業外的項目，在 IFRS 18 下分別歸入不同類別，營業損益也跟著改變。</p>
+        <button type="button" class="btn btn-sky" data-sim-open>開啟完整試算 <span class="arrow">→</span></button>
+      </div>
+      <div class="teaser-panel">
+        <p class="teaser-title">範例公司・單位：新台幣千元</p>
+        <ul id="teaser-moves" class="moves"></ul>
+        <div class="teaser-result">
+          <div><span>營業損益</span><strong id="teaser-op"></strong></div>
+          <div><span>本期淨利</span><strong id="teaser-net"></strong><small>不受 IFRS 18 影響</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 完整試算：全螢幕視窗 -->
+  <div id="sim-modal" class="sim-modal" role="dialog" aria-modal="true" aria-labelledby="sim-modal-title" hidden>
+    <div class="sim-modal-bar">
+      <div class="container sim-modal-bar-inner">
+        <p class="sec-kicker"><span class="sec-idx">05</span><span id="sim-modal-title">IFRS 18 損益表試算</span></p>
+        <button type="button" class="sim-close" data-sim-close aria-label="關閉試算">✕</button>
+      </div>
+    </div>
+    <div class="container sim-modal-body">
+      <p class="sec-lead">左側是範例公司的損益科目，已依 IFRS 18 一般企業規則建議分類並附上理由（模擬科目分類助理）。修改金額或調整類別，右側即時產出新制損益表。</p>
+
+      <div id="diff" class="kpis"></div>
+
+      <div class="sim">
+        <div class="sim-panel">
+          <div class="sim-bar">
+            <p class="sim-title">科目分類<small>單位：新台幣千元</small></p>
+            <div class="sim-actions">
+              <button id="btn-add" class="btn-mini">＋ 新增科目</button>
+              <button id="btn-reset" class="btn-mini">重設</button>
+            </div>
+          </div>
+          <div class="item-head"><span>科目／分類理由</span><span>金額</span><span>IFRS 18 類別</span><span></span></div>
+          <div id="items-body" class="item-list"></div>
+        </div>
+        <div class="sim-panel sim-statement">
+          <p class="sim-title">綜合損益表<small>IFRS 18 格式</small></p>
+          <div id="statement"></div>
+        </div>
+      </div>
+
+      <div class="inline-cta">
+        <div>
+          <strong>想用貴公司的實際科目試算？</strong>
+          <p>鼎新顧問可協助盤點損益科目，評估 IFRS 18 對營業損益的實際影響。</p>
+        </div>
+        <a href="#FormTemplate" class="btn btn-sky" data-sim-close>申請影響評估 <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 06 客戶實證 + 為什麼選擇鼎新 -->
+  <section id="proof" class="section section-tint">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="sec-kicker"><span class="sec-idx">06</span>客戶實證</p>
+        <h2>他們已經開始準備</h2>
+      </div>
+
+      <!-- TODO: 客戶案例待補，請替換每張卡片內容 -->
+      <p class="swipe-hint" aria-hidden="true">左右滑動看更多案例 →</p>
+      <div class="cases reveal">
+        <article class="case case-todo">
+          <div class="case-cover"><span class="todo-badge">待補資料</span></div>
+          <div class="case-body"><span class="case-tag">產業別</span><p class="case-metric">導入成效數據</p><h3>客戶名稱｜案例標題</h3><p class="case-text">案例摘要：導入前的挑戰、導入範圍與成果。</p><a href="#" class="case-link">閱讀案例 →</a></div>
+        </article>
+        <article class="case case-todo">
+          <div class="case-cover"><span class="todo-badge">待補資料</span></div>
+          <div class="case-body"><span class="case-tag">產業別</span><p class="case-metric">導入成效數據</p><h3>客戶名稱｜案例標題</h3><p class="case-text">案例摘要：導入前的挑戰、導入範圍與成果。</p><a href="#" class="case-link">閱讀案例 →</a></div>
+        </article>
+        <article class="case case-todo">
+          <div class="case-cover"><span class="todo-badge">待補資料</span></div>
+          <div class="case-body"><span class="case-tag">產業別</span><p class="case-metric">導入成效數據</p><h3>客戶名稱｜案例標題</h3><p class="case-text">案例摘要：導入前的挑戰、導入範圍與成果。</p><a href="#" class="case-link">閱讀案例 →</a></div>
+        </article>
+      </div>
+
+      <div class="why reveal">
+        <div class="why-head">
+          <h3>為什麼選擇鼎新數智</h3>
+          <p>40 年以上實務淬鍊，累積深厚行業財務管理知識，是企業財務數智化轉型的夥伴。</p>
+        </div>
+        <!-- 數據沿用鼎新財務模組頁，請與品牌單位確認最新數字 -->
+        <div class="stats">
+          <div class="stat"><strong>40<small>年+</small></strong><span>行業深耕</span><p>1982 年成立，服務超過 50,000 家企業</p></div>
+          <div class="stat"><strong>77<small>%</small></strong><span>公發企業覆蓋</span><p>2,551 家公發企業中 1,953 家採用<br><em>資料來源：公開資訊觀測站，2025/03</em></p></div>
+          <div class="stat"><strong>在地</strong><span>財稅與 IPO 合規</span><p>熟悉台灣財稅法規與 IPO 合規需求</p></div>
+          <div class="stat"><strong>13<small>億元</small></strong><span>轉型投資效益</span><p>2021–2022 年協助約 300 家製造業</p></div>
+          <div class="stat"><strong>ISO</strong><span>27001 資安認證</span><p>通過 ISO/IEC 27001:2022 認證</p></div>
+          <div class="stat"><strong>24<small>%</small></strong><span>經營管理顧問占比</span><p>1,800+ 名員工中 440 位為顧問</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 文章專區 -->
+  <section id="insights" class="section">
+    <div class="container">
+      <div class="sec-head sec-head-row reveal">
+        <div>
+          <p class="sec-kicker"><span class="sec-idx">07</span>文章專區</p>
+          <h2>IFRS 18 觀點與實務</h2>
+        </div>
+        <div id="article-filters" class="filters" role="tablist" aria-label="文章分類"></div>
+      </div>
+      <div id="articles" class="articles reveal"></div>
+    </div>
+  </section>
+
+  <!-- 08 常見問題 -->
+  <section id="faq" class="section section-tint">
+    <div class="container faq-grid">
+      <div class="sec-head reveal">
+        <p class="sec-kicker"><span class="sec-idx">08</span>常見問題</p>
+        <h2>轉換前，<br>你可能想問</h2>
+        <p class="sec-lead">找不到答案？歡迎直接預約顧問諮詢。</p>
+        <a href="#FormTemplate" class="btn btn-navy">預約諮詢 <span class="arrow">→</span></a>
+      </div>
+      <div class="faq-list reveal">
+        <details open>
+          <summary>IFRS 18 會改變公司的淨利嗎？</summary>
+          <p>不會。IFRS 18 是「表達與揭露」準則，不改變認列與衡量，本期淨利不變，但營業損益等小計的金額可能改變。</p>
+        </details>
+        <details>
+          <summary>台灣什麼時候開始適用？</summary>
+          <p>IFRS 18 國際生效日為 2027 年 1 月 1 日，台灣預計 2028 年適用，實際時程以金管會公告為準。由於須追溯重編比較期間，2027 年的資料就須能依新制表達。</p>
+        </details>
+        <details>
+          <summary>什麼是「營業類別為剩餘類別」？</summary>
+          <p>不屬於投資、籌資、所得稅、停業單位的收益及費損，都歸入營業類別。因此部分過去列在營業外的項目，例如營業相關的外幣兌換損益，會進入營業損益。</p>
+        </details>
+        <details>
+          <summary>AI Agent 會直接改我的帳嗎？</summary>
+          <p>不會。Agent 提供分類建議與判斷理由，由財會人員確認後才寫入系統，並保留完整的覆核軌跡。</p>
+        </details>
+        <details>
+          <summary>目前不是使用鼎新 ERP，也能諮詢嗎？</summary>
+          <p>可以。顧問會依貴公司的現行系統與產業特性，提供 IFRS 18 轉換建議。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 表單：嵌入公司公版表單 -->
+  <section id="FormTemplate" class="section section-dark form-section">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container form-grid">
+      <div class="form-copy">
+        <p class="sec-kicker"><span class="sec-idx">09</span>預約諮詢</p>
+        <h2>預約顧問，<br>評估你的 IFRS 18 因應做法</h2>
+        <ul class="checklist">
+          <li><strong>做法評估</strong>依你的科目架構與交易複雜度，評估期末帳外調整或提前建置</li>
+          <li><strong>實機展示</strong>Agent Space 科目自動分類 Demo</li>
+          <li><strong>時程規劃</strong>依 2026 盤點、2027 比較、2028 適用的節奏，規劃導入步驟</li>
+        </ul>
+      </div>
+
+      <!-- TODO: 以下為示意畫面，請替換為公司公版表單的嵌入程式碼 -->
+      <div class="form-card">
+        <p class="form-title">預約 IFRS 18 因應做法評估</p>
+        <div class="form-fields">
+          <div class="f"><span>姓名</span><i></i></div>
+          <div class="f"><span>公司名稱</span><i></i></div>
+          <div class="f"><span>Email</span><i></i></div>
+          <div class="f"><span>聯絡電話</span><i></i></div>
+          <div class="f f-wide"><span>想了解的內容</span><i class="tall"></i></div>
+        </div>
+        <div class="form-submit">送出預約</div>
+        <p class="form-embed-note">FORM EMBED · 公版表單嵌入區</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="brand-name">鼎新數智</span>
+      <p>本頁 IFRS 18 內容僅供參考，不構成會計或法律意見。實際適用請參閱 IFRS 18 原文及主管機關公告。</p>
+    </div>
+  </footer>
+
+  <a href="#FormTemplate" class="float-cta">預約諮詢</a>
+
+  <script src="js/data.js?v=7"></script>
+  <script src="js/content.js?v=7"></script>
+  <script src="js/app.js?v=7"></script>
+  <script src="js/landing.js?v=7"></script>
+</body>
+</html>

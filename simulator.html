@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFRS 18 損益表試算｜鼎新 ERP × Agent Space</title>
+  <meta name="description" content="輸入損益科目，即時看到 IFRS 18 新制損益表：營業、投資、籌資三大類別與新強制小計。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=7">
+</head>
+<body>
+  <!-- 獨立試算頁：供文章、Email、社群直接連結；與 index.html 的試算視窗共用 js/app.js -->
+  <header class="topbar topbar-solid">
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-name">鼎新數智</span>
+        <span class="brand-sep"></span>
+        <span class="brand-sub">IFRS 18</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">← 回 IFRS 18 專題</a>
+      </nav>
+      <a href="index.html#FormTemplate" class="btn btn-sky btn-sm">預約諮詢 <span class="arrow">→</span></a>
+    </div>
+  </header>
+
+  <section class="section page-sim">
+    <div class="container">
+      <div class="sec-head">
+        <p class="sec-kicker"><span class="sec-idx">TOOL</span>IFRS 18 損益表試算</p>
+        <h2>看看你的損益表<br>在 IFRS 18 下會怎麼變</h2>
+        <p class="sec-lead">左側是範例公司的損益科目，已依 IFRS 18 一般企業規則建議分類並附上理由（模擬科目分類助理）。修改金額或調整類別，右側即時產出新制損益表。</p>
+      </div>
+
+      <div id="diff" class="kpis"></div>
+
+      <div class="sim">
+        <div class="sim-panel">
+          <div class="sim-bar">
+            <p class="sim-title">科目分類<small>單位：新台幣千元</small></p>
+            <div class="sim-actions">
+              <button id="btn-add" class="btn-mini">＋ 新增科目</button>
+              <button id="btn-reset" class="btn-mini">重設</button>
+            </div>
+          </div>
+          <div class="item-head"><span>科目／分類理由</span><span>金額</span><span>IFRS 18 類別</span><span></span></div>
+          <div id="items-body" class="item-list"></div>
+        </div>
+        <div class="sim-panel sim-statement">
+          <p class="sim-title">綜合損益表<small>IFRS 18 格式</small></p>
+          <div id="statement"></div>
+        </div>
+      </div>
+
+      <div class="inline-cta">
+        <div>
+          <strong>想用貴公司的實際科目試算？</strong>
+          <p>鼎新顧問可協助盤點損益科目，評估 IFRS 18 對營業損益的實際影響。</p>
+        </div>
+        <a href="index.html#FormTemplate" class="btn btn-sky">申請影響評估 <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="brand-name">鼎新數智</span>
+      <p>本頁 IFRS 18 內容僅供參考，不構成會計或法律意見。實際適用請參閱 IFRS 18 原文及主管機關公告。</p>
+    </div>
+  </footer>
+
+  <a href="index.html#FormTemplate" class="float-cta">預約諮詢</a>
+
+  <script src="js/data.js?v=7"></script>
+  <script src="js/app.js?v=7"></script>
+</body>
+</html>
